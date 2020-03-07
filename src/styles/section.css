@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 1em;
+    grid-gap: 2em;
+    width: 100%;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+.container__profile {
+    display: grid;
+    width: 100%;
+    padding-top: 16px;
+    grid-column: 1;
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right:2em;
+    justify-items: center;
+    margin: 0;
+    padding: 1em .5em .5em .5em;
+    
+}
+.container__profile--image {
+    width: 10em;
+    border: solid 4px;
+    border-style: double;
+    border-color: #ff7315;
+    border-radius: 90px; 
+}
+.container__profile--name {
+    font-family: 'Lato';
+    font-size: 1.7em;
+    margin-top: .5em;
+    margin-bottom: .4em;
+    color: #232020;
+    
+}
+.container__profile--profession {
+    font-family: 'Lato';
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: .4em;
+    color:#ff7315;
+    
+}
+.container__profile--short-biography {
+    font-family: 'Lato';
+    width: 80%;
+    font-size: .9em;
+    text-align: center;
+    margin-bottom: 0;
+    color: #3a3535;
+}
+.container__profile--location {
+    font-family: 'Lato';
+    font-size: .9em;
+    color: #232020;
+}
+.container__profile--socialmedia {
+    list-style: none;
+    padding-left: 0;
+}
+.container__profile--socialmedia li {
+    display: inline-block;
+}
+.container__profile--socialmedia li a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    margin-left: 8px;
+    
+}
+.container__grow {
+    grid-column: 2;
+    margin: 0;
+    padding: .5em .8em .3em .8em;
+}
+.container__grow--about {
+    font-family: 'Lato';
+    font-size: 2em;
+    color:#ff7315;
+    margin-bottom: .5em;
+}
+.container__grow--title {
+    font-family: 'Lato';
+    font-size: 1.5em;
+    color: #232020;
+    margin-top: 0;
+}
+.container__grow--description {
+    font-family: 'Lato';
+    font-size: 1em;
+    color: #3a3535;
+}
+.container__skills {
+    grid-column: 2;
+    font-family: 'Lato';
+    color: white;
+    text-align: center;
+}
+.container__skills--name {
+  font-family: 'Lato';
+  font-size: 2em;
+   color:#3a3535;
+
+}
+.container__skills--list {
+    list-style: none;
+    color:#ff7315;
+}
+.container__skills--technology {
+    font-family: 'Lato';
+    font-size: 1em;
+   
+}
+@media (max-width: 980px) {
+    .container {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .container__profile {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .container__skills {
+        display: none;
+    }
+}
